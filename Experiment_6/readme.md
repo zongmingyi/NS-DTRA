@@ -1,4 +1,4 @@
-     This experimental code is to verify the Truthfulness verification of NS-DTRA.
+This experimental code is to verify the Truthfulness verification of NS-DTRA.
 
 experiment_6_generate_data.py : The code that generates the data.
 
