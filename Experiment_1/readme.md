@@ -1,5 +1,4 @@
-     These experimental codes are used to verify the impact of DTC resources capacity 
-on factors such as utility, number of winners, etc.
+These experimental codes are used to verify the impact of DTC resources capacity on factors such as utility, number of winners, etc.
 
 experiment_1_generate_data.py : The code that generates the data.
 
