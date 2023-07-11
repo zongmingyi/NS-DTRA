@@ -1,4 +1,4 @@
-     This experimental code is to compare total payments.
+This experimental code is to compare total payments.
 
 experiment_5_generate_data.py : The code that generates the data.
 
