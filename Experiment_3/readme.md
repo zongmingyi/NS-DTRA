@@ -1,5 +1,4 @@
-     These experimental codes are used to verify the impact of the UAV base station scale
-on factors such as utility, number of winners, etc.
+These experimental codes are used to verify the impact of the UAV base station scale on factors such as utility, number of winners, etc.
 
 experiment_3_generate_data.py : The code that generates the data.
 
