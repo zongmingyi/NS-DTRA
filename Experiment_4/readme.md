@@ -1,5 +1,4 @@
-     These experimental codes are used to verify the impact of base station throughput
-on factors such as utility, number of winners, etc.
+These experimental codes are used to verify the impact of base station throughput on factors such as utility, number of winners, etc.
 
 experiment_4_generate_data.py : The code that generates the data.
 
