@@ -1,0 +1,36 @@
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.pyplot import MultipleLocator
+
+# 每个柱状图的标签
+labels = ['2', '4', '6', '8', '10']
+# 柱的数值
+opt = [0.664, 0.923, 0.9683, 1, 1]
+NS_DTRA = [0.664, 0.923, 0.9683, 1, 1]
+greedy = [0.508, 0.597, 0.71, 0.65, 0.67]
+# x轴刻度标签位置
+x = np.arange(len(labels))
+# 柱子宽度
+width = 0.25
+ax = plt.subplot()
+rects1 = ax.bar(x - width, opt, width, label='OPT-DTRA', color=['red', 'red', 'red', 'red', 'red'])
+rects2 = ax.bar(x, NS_DTRA, width, label='NS-DTRA',
+                color=['mediumseagreen', 'mediumseagreen', 'mediumseagreen', 'mediumseagreen', 'mediumseagreen'])
+rects3 = ax.bar(x + width, greedy, width, label='Greedy',
+                color=['blue', 'blue', 'blue', 'blue', 'blue'])
+# 设置y轴标题
+ax.set_ylabel('Utilization of CPU Instruction Cycles', fontsize=13)
+ax.set_xlabel('Number of UAV-BSs', fontsize=13)
+ax.set_ylim(0.4, 1.3)
+# 将y轴刻度间隔设置并存在变量中
+y_major_locator = MultipleLocator(0.2)
+# 设置刻度间隔
+axgca = plt.gca()
+axgca.yaxis.set_major_locator(y_major_locator)
+# x轴刻度不进行计算
+ax.set_xticks(x)
+ax.set_xticklabels(labels)
+plt.title("$M=2,4,6,8,10$ $N=100$ $THP_m=400Mbps$ $THP_{cloud}=1000Mbps$")
+ax.legend()
+
+plt.show()
